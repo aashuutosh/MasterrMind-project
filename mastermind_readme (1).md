@@ -100,28 +100,6 @@ This means: 1 digit is in the right spot, and 2 other digits are correct but in 
 - Make 12 incorrect guesses
 - Expected: "Game Over!" message with revealed key
 
-### Automated Testing (Optional)
-
-To test the core functions programmatically, add this code to a separate test file:
-
-```python
-from mastermind import validate_guess, get_feedback
-
-# Test validation
-assert validate_guess("1234") is None
-assert validate_guess("123") == "Guess must be 4 digits."
-assert validate_guess("112a") == "Guess must contain digits only."
-assert validate_guess("1123") == "Digits must not repeat."
-
-# Test feedback
-key = "1234"
-assert get_feedback(key, "1234") == (4, 0)  # All correct
-assert get_feedback(key, "1243") == (2, 2)  # 2 correct position, 2 wrong position
-assert get_feedback(key, "5678") == (0, 0)  # None correct
-
-print("All tests passed!")
-```
-
 ## Game Strategy Tips
 
 - Start with diverse digits to maximize information (e.g., `0123`, `4567`)
