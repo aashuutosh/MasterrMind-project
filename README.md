@@ -50,6 +50,22 @@ This project demonstrates fundamental programming concepts including random numb
 
 4. **Start playing**: Follow the on-screen prompts to enter your guesses
 
+## Screenshots
+
+The game in action:
+
+### Starting the Game
+![Game Start](screenshots/screenshot1.png)
+*Early game showing initial guesses and feedback*
+
+### Mid-Game Progress
+![Mid Game](screenshots/screenshot2.png)
+*Using feedback to narrow down possibilities*
+
+### Winning the Game
+![Victory](screenshots/screenshot3.png)
+*Successfully cracking the code in 10 attempts*
+
 ## How to Play
 
 1. The game generates a secret 4-digit code (digits 0-9, no repeats)
